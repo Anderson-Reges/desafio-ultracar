@@ -1,8 +1,13 @@
+import { Route, Routes } from 'react-router-dom';
+import Services from './pages/Services';
+import Register from './pages/Register';
+
 function App() {
   return (
-    <div>
-      Hello World
-    </div>
+    <Routes>
+      <Route exact path='/' Component={ Services }/>
+      <Route path='/cadastro' Component={ Register }/>
+    </Routes>
   );
 }
 
