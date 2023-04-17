@@ -7,7 +7,7 @@
     "service": "Troca de oleo",
     "price": 25.00,
     "startedAt": "14/04/2023",
-    "finishedAt": "15/04/2023"
+    "finishedAt": null
   },
   {
     "id": 2,
@@ -17,11 +17,11 @@
     "service": "Troca do carburador",
     "price": 500.00,
     "startedAt": "15/04/2023",
-    "finishedAt": "17/04/2023"
+    "finishedAt": null
   },
   {
     "id": 3,
-    "clientId": 1,
+    "clientId": 3,
     "responsibleId": 2,
     "status": "Finalizado",
     "service": "Bateria Nova",
@@ -31,7 +31,7 @@
   },
   {
     "id": 4,
-    "clientId": 2,
+    "clientId": 4,
     "responsibleId": 1,
     "status": "Finalizado",
     "price": 112.00,
