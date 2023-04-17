@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "clientName": "Paulo Ramos da Silva",
+    "CPF": "xxxxxxxxxxx",
+    "email": "paulo@test.com",
+    "phone": "xxxxxxxxxx",
+    "carBrand": "Peugeot",
+    "carModel": "Peugeot 206",
+    "carYear": "2006"
+  },
+  {
+    "id": 2,
+    "clientName": "Victor Ribeiro do santos",
+    "CPF": "xxxxxxxxxxx",
+    "email": "victo@test.com",
+    "phone": "xxxxxxxxxx",
+    "carBrand": "Volkswagen",
+    "carModel": "Volkswagen Gol",
+    "carYear": "2010"
+  },
+  {
+    "id": 3,
+    "clientName": "Miguel do santos filho",
+    "CPF": "xxxxxxxxxxx",
+    "email": "miguel@test.com",
+    "phone": "xxxxxxxxxx",
+    "carBrand": "FIAT",
+    "carModel": "FIAT strada",
+    "carYear": "2010"
+  },
+  {
+    "id": 4,
+    "clientName": "Evair alfonso pergantino",
+    "CPF": "xxxxxxxxxxx",
+    "email": "evair@test.com",
+    "phone": "xxxxxxxxxx",
+    "carBrand": "FIAT",
+    "carModel": "FIAT UNO",
+    "carYear": "2012"
+  }
+]
