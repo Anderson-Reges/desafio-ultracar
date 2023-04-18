@@ -39,6 +39,7 @@ export default function OrderTable({ service }) {
               {product.name}
             </td>
             <td>
+              R$
               {product.price}
             </td>
           </tr>

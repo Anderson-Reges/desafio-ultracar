@@ -30,6 +30,7 @@ const QrcodeReader = () => {
           }
         }}
         style={{ width: '100%' }}
+        containerStyle={{ width: '50%', heigth: '50%' }}
       />
     </>
   );

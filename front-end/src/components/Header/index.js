@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styles from './styles.module.scss';
 
 export default function Header() {
   return (
-    <div>
+    <div className={ styles.headerContainer }>
       <Link to='/'>
         Serviços
       </Link>

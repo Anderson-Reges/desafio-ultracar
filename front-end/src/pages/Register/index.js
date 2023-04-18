@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
-import Header from "../components/Header";
-import MyContext from "../context/Context";
-import QrcodeReader from "../components/QrcodeReader";
-import RegisterUser from '../components/RegisterUser';
+import Header from "../../components/Header";
+import MyContext from "../../context/Context";
+import QrcodeReader from "../../components/QrcodeReader";
+import RegisterUser from '../../components/RegisterUser';
+import styles from './styles.module.scss';
 
 export default function Register() {
   const {
@@ -27,7 +28,7 @@ export default function Register() {
   return (
     <div>
       <Header />
-      <div>
+      <div className={ styles.pageContainer }>
         <input
           type="button"
           value="Ler QRcode"
@@ -38,10 +39,12 @@ export default function Register() {
           value="Cadastrar Novo Cliente"
           onClick={setRender}
         />
-        {
-          renderReadQR && <QrcodeReader />
-        }
-        {registerNewUser && <RegisterUser />}
+        <div className={ styles.qr }>
+          {
+            renderReadQR && <QrcodeReader />
+          }
+          {registerNewUser && <RegisterUser />}
+        </div>
       </div>
     </div>
   )
