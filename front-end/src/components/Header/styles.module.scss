@@ -1,0 +1,26 @@
+@import '../../styles/global.scss';
+
+.headerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary;
+  height: 10vh;
+  gap: 10em;
+  
+  a {
+    display: flex;
+    align-items: center;
+    font-size: 1.6em;
+    height: 10vh;
+    color: $text-white;
+    box-sizing: border-box;
+    border-bottom: 0px;
+    text-decoration: none;
+    transition: all 250ms ease-in-out;
+
+    &:hover {
+      border-bottom: 5px solid $text-white;
+    }
+  }
+}

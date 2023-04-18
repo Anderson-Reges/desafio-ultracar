@@ -1,0 +1,39 @@
+@import '../../styles/global.scss';
+
+.pageContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em 2em 3em 2em;
+  gap: 1em;
+
+  .info {
+    display: flex;
+    gap: 1em;
+
+    .firstColumn {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+
+    .secondColumn {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+  }
+
+  .tableProducts {
+    table {
+      tbody {
+        tr {
+          td {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

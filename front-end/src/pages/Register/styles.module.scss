@@ -1,0 +1,16 @@
+@import '../../styles/global.scss';
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 3em 2em 3em 2em;
+
+  .qr {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+  }
+}

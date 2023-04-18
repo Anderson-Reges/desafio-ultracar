@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "clientId": 1,
+    "responsibleId": 2,
+    "status": "Em Progresso",
+    "productsIds": [1],
+    "price": 25.00,
+    "startedAt": "14/04/2023",
+    "finishedAt": null
+  },
+  {
+    "id": 2,
+    "clientId": 2,
+    "responsibleId": 1,
+    "status": "Em Progresso",
+    "productsIds": [2],
+    "price": 500.00,
+    "startedAt": "15/04/2023",
+    "finishedAt": null
+  },
+  {
+    "id": 3,
+    "clientId": 3,
+    "responsibleId": 2,
+    "status": "Finalizado",
+    "productsIds": [3],
+    "price": 423.00,
+    "startedAt": "05/04/2023",
+    "finishedAt": "06/04/2023"
+  },
+  {
+    "id": 4,
+    "clientId": 4,
+    "responsibleId": 1,
+    "status": "Finalizado",
+    "productsIds": [4],
+    "price": 112.00,
+    "startedAt": "29/03/2023",
+    "finishedAt": "01/04/2023"
+  }
+]

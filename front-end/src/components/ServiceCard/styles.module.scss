@@ -1,0 +1,94 @@
+@import '../../styles/global.scss';
+
+#linkCard {
+  width: 100%;
+  height: 30vh;
+  border: 1px solid $secondary;
+  border-radius: 0.2em;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+
+  div {
+    width: 100%;
+
+    .headerCard {
+      display: flex;
+      height: 30%;
+      gap: 15em;
+      background-color: $secondary;
+      color: $text-white;
+      align-items: center;
+      justify-content: center;
+
+      h3 {
+        display: flex;
+        gap: 0.5em
+      }
+    }
+
+    .secondColumnCard {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 21vh;
+      cursor: pointer;
+
+      h3 {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+        cursor: pointer;
+
+        &.progress {
+          color: $inProgress;
+        }
+
+        &.finished {
+          color: $finished;
+        }
+      }
+
+      .cardInfo {
+        display: flex;
+        width: 100%;
+
+        .cardNames {
+          display: flex;
+          gap: 0.5em;
+          align-items: stretch;
+          flex-direction: column;
+          
+          label {
+            cursor: pointer;
+          }
+
+          h3 {
+            width: 100%;
+            font-size: 0.9em;
+          }
+        }
+
+        .cardDates {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          height: 80%;
+          
+          label {
+            cursor: pointer;
+          }
+
+          h3 {
+            width: 100%;
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+  }
+
+}
