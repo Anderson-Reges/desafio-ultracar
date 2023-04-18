@@ -4,9 +4,12 @@
     "clientId": 1,
     "responsibleId": 2,
     "status": "Em Progresso",
-    "productsIds": [1],
-    "price": 25.00,
-    "startedAt": "14/04/2023",
+    "serviceDescription": "trocar o oleo",
+    "productsIds": [
+      1
+    ],
+    "price": 25,
+    "startedAt": "2023-04-14T11:51:38.316Z",
     "finishedAt": null
   },
   {
@@ -14,9 +17,12 @@
     "clientId": 2,
     "responsibleId": 1,
     "status": "Em Progresso",
-    "productsIds": [2],
-    "price": 500.00,
-    "startedAt": "15/04/2023",
+    "serviceDescription": "trocar o carburador",
+    "productsIds": [
+      2
+    ],
+    "price": 500,
+    "startedAt": "2023-04-15T11:51:38.316Z",
     "finishedAt": null
   },
   {
@@ -24,19 +30,39 @@
     "clientId": 3,
     "responsibleId": 2,
     "status": "Finalizado",
-    "productsIds": [3],
-    "price": 423.00,
-    "startedAt": "05/04/2023",
-    "finishedAt": "06/04/2023"
+    "serviceDescription": "trocar o bateria",
+    "productsIds": [
+      3
+    ],
+    "price": 423,
+    "startedAt": "2023-04-05T11:51:38.316Z",
+    "finishedAt": "2023-04-06T11:51:38.316Z"
   },
   {
     "id": 4,
     "clientId": 4,
     "responsibleId": 1,
     "status": "Finalizado",
-    "productsIds": [4],
-    "price": 112.00,
-    "startedAt": "29/03/2023",
-    "finishedAt": "01/04/2023"
+    "serviceDescription": "trocar a correia dentada",
+    "productsIds": [
+      4
+    ],
+    "price": 112,
+    "startedAt": "2023-03-29T11:51:38.316Z",
+    "finishedAt": "2023-04-01T11:51:38.316Z"
+  },
+  {
+    "id": 5,
+    "clientId": 1,
+    "responsibleId": 1,
+    "status": "Em Progresso",
+    "serviceDescription": "trocar bateria e carburador",
+    "productsIds": [
+      2,
+      3
+    ],
+    "price": 923,
+    "startedAt": "2023-04-18T18:35:17.847Z",
+    "finishedAt": null
   }
 ]

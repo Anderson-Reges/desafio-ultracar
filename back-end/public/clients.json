@@ -5,9 +5,9 @@
     "CPF": "xxxxxxxxxxx",
     "email": "paulo@test.com",
     "phone": "xxxxxxxxxx",
-    "carBrand": "Peugeot",
-    "carModel": "Peugeot 206",
-    "carYear": "2006"
+    "vehicleBrand": "Peugeot",
+    "vehicleModel": "Peugeot 206",
+    "vehicleYear": "2006"
   },
   {
     "id": 2,
@@ -15,9 +15,9 @@
     "CPF": "xxxxxxxxxxx",
     "email": "victo@test.com",
     "phone": "xxxxxxxxxx",
-    "carBrand": "Volkswagen",
-    "carModel": "Volkswagen Gol",
-    "carYear": "2010"
+    "vehicleBrand": "Volkswagen",
+    "vehicleModel": "Volkswagen Gol",
+    "vehicleYear": "2010"
   },
   {
     "id": 3,
@@ -25,9 +25,9 @@
     "CPF": "xxxxxxxxxxx",
     "email": "miguel@test.com",
     "phone": "xxxxxxxxxx",
-    "carBrand": "FIAT",
-    "carModel": "FIAT strada",
-    "carYear": "2010"
+    "vehicleBrand": "FIAT",
+    "vehicleModel": "FIAT strada",
+    "vehicleYear": "2010"
   },
   {
     "id": 4,
@@ -35,8 +35,18 @@
     "CPF": "xxxxxxxxxxx",
     "email": "evair@test.com",
     "phone": "xxxxxxxxxx",
-    "carBrand": "FIAT",
-    "carModel": "FIAT UNO",
-    "carYear": "2012"
+    "vehicleBrand": "FIAT",
+    "vehicleModel": "FIAT UNO",
+    "vehicleYear": "2012"
+  },
+  {
+    "id": 5,
+    "clientName": "Anderson Reges",
+    "CPF": "xxxxxxxxxxxxxx",
+    "email": "reges@test.com",
+    "phone": "xxxxxxxxxxx",
+    "vehicleBrand": "Honda",
+    "vehicleModel": "Bros nxr 160",
+    "vehicleYear": "2022"
   }
 ]
