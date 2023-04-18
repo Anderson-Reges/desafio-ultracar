@@ -5,25 +5,16 @@ import ServiceCard from "../components/ServiceCard";
 
 export default function Services() {
   const {
-    allServices, setAllServices, clients, responsibles, selectResponsible, setSelectResponsible,
-    servicePerResponsible, setServicePerResponsible,
+    allServices, setAllServices, responsibles, selectResponsible, setSelectResponsible,
+    servicePerResponsible, setServicePerResponsible, getServices,
   } = useContext(MyContext);
-
-  const getNameClient = (clientId) => {
-    const user = clients.filter(({ id }) => id === clientId);
-    return user[0].clientName;
-  }
-
-  const getNameResponsible = (responsibleId) => {
-    const responsible = responsibles.filter(({ id }) => id === responsibleId);
-    return responsible[0].name
-  }
 
   useEffect(() => {
     if (selectResponsible !== 'Todos os Responsaveis') {
       const service = allServices.filter((e) => e.responsibleId === Number(selectResponsible))
       setServicePerResponsible(service)
     }
+    getServices();
   }, [selectResponsible, setAllServices, setServicePerResponsible])
 
   return (
@@ -55,8 +46,6 @@ export default function Services() {
               key={service.id}
               id={service.id}
               status={service.status}
-              getNameClient={ getNameClient }
-              getNameResponsible={ getNameResponsible }
               price={service.price}
               startedAt={service.startedAt}
               finishedAt={service.finishedAt}
@@ -70,8 +59,6 @@ export default function Services() {
               key={service.id}
               id={service.id}
               status={service.status}
-              getNameClient={getNameClient}
-              getNameResponsible={getNameResponsible}
               price={service.price}
               startedAt={service.startedAt}
               finishedAt={service.finishedAt}

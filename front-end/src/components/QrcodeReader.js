@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom'
 
 const QrcodeReader = () => {
   const navigate = useNavigate();
-  const { setClient } = useContext(MyContext);
   const [redirectBoolean, setRedirect] = useState(false);
 
   useEffect(() => {
@@ -17,16 +16,16 @@ const QrcodeReader = () => {
       <QrReader
         onResult={(result, _error) => {
           if (!!result) {
-            setClient({
+            const mockQr = {
               id: 1,
               clientName: "Paulo Ramos da Silva",
-              CPF: "xxxxxxxxxxx",
               email: "paulo@test.com",
               phone: "xxxxxxxxxx",
-              carBrand: "Peugeot",
-              carModel: "Peugeot 206",
-              carYear: "2006"
-            });
+              vehicleBrand: "Peugeot",
+              vehicleModel: "Peugeot 206",
+              vehicleYear: "2006"
+            }
+            localStorage.setItem('qrUser', JSON.stringify(mockQr))
             setRedirect(true);
           }
         }}

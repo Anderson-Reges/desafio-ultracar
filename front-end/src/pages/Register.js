@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import Header from "../components/Header";
 import MyContext from "../context/Context";
 import QrcodeReader from "../components/QrcodeReader";
+import RegisterUser from '../components/RegisterUser';
 
 export default function Register() {
   const {
@@ -40,7 +41,7 @@ export default function Register() {
         {
           renderReadQR && <QrcodeReader />
         }
-        {registerNewUser && <h2>1</h2>}
+        {registerNewUser && <RegisterUser />}
       </div>
     </div>
   )

@@ -1,23 +1,19 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import MyContext from "../context/Context";
 import Header from "../components/Header";
 import ProductCard from '../components/ProductCard';
 import OrderTable from "../components/OrderTable";
+import ClientInfo from "../components/ClienteInfo";
 
 export default function FormService() {
   const {
     client, selectResponsible, setSelectResponsible, responsibles,
     products, setClient, productsInCart, setProductsInCart,
     inputSearch, setInputSearch, resultSearch, setResultSearch,
-    totalPrice, setTotalPrice, postServices, allServices
+    totalPrice, setTotalPrice, postServices, allServices, description, setDescription,
   } = useContext(MyContext);
-
-  const handleChange = ({ target }) => {
-    const { value, name } = target
-    setClient((prevState) => ({
-      ...prevState, [name]: value
-    }))
-  }
+  const navigate = useNavigate();
 
   const createService = (event) => {
     event.preventDefault();
@@ -28,12 +24,15 @@ export default function FormService() {
       clientId: client.id,
       responsibleId: Number(selectResponsible),
       status: "Em progresso",
+      serviceDescription: description,
       productsIds: onlyIds,
       price: totalPrice,
       startedAt: date,
       finishedAt: null,
     }
     postServices(body)
+    setSelectResponsible('Todos os Responsaveis')
+    navigate('/')
   }
 
   useEffect(() => {
@@ -46,23 +45,20 @@ export default function FormService() {
     ));
     setResultSearch(filterProduct)
 
-    if (inputSearch.length === 0)
+    if (localStorage.getItem('qrUser')) {
+      const qrUser = JSON.parse(localStorage.getItem('qrUser'))
+      setClient(qrUser)
+    }
+    if (inputSearch.length === 0) {
       return setResultSearch([])
-  }, [inputSearch, products, productsInCart])
+    }
+  }, [inputSearch, products, productsInCart, setSelectResponsible])
 
   return (
     <main>
       <Header />
       <form onSubmit={ createService }>
-        <label htmlFor="Cliente">
-          Cliente:
-          <input
-            type="text"
-            name="clientName"
-            onChange={handleChange}
-            value={client.clientName}
-          />
-        </label>
+        <ClientInfo />
         <label htmlFor="Pessoa Responsavel">
           Pessoa Responsavel:
           <select
@@ -95,7 +91,8 @@ export default function FormService() {
           <input
             type="text"
             name="service"
-            onChange={handleChange}
+            value={description}
+            onChange={({ target }) => setDescription(target.value)}
           />
         </label>
         <input
